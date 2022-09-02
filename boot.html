@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="row mt-3">
+        <div class="col-2">
+            <img src="data:image/png;base64,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GTrX3rCIllEWHcxj+E8M8CG+fDWxxaQHttDG5NTqgHznAbWd8h/LkOgwYS7mw23+ixdzYXWn2Z2JzjFwEMPT3yXoDuy53cHfcCDn5Dl03oIdbejgaHEEXTjBYt1hFh3c0h2/G1Md9k3GsUTHeuQdG2r2bLrBr1RWFw4WbGkRq2NrAp2nQps8doTCOuDcatyp8AMA56KDyu+DziK6L7O6zTB2x+zkE0w0R6ETmjl0GHK/spyYTaGONdgVbbvmw2MOXXig29h3LA/scRP4TmjBhc+GQDddtqawJGFRZhEdwoWmr6FjMdcJYc1yM4ZSQoGOnQHgmoI+IycczNnUsMoPAFT11635agI78XsY+K1JHztsji6S6OYsGo+ZAj+VsEBiAh1Omwz5uxxoJTMeB7+jfKaH4XNGtHF41ik2QpcXHWIrIyEP5jRlHP0URvipofnrcIaLuvo7UQXz1+34OGBSHOkBLM/cZcMEa5btR75ggacMr2tc/rcugc43eXAr8TFqK7RYDxM63EgsdqzIsNRCLCJheywWSHYc7MdwL1YoltkW/60U4oyDDvv9HVYafDaZ+8dkp67DEPvHdmARGyrEPFiUyRiTcLwPTFzfe0kQdBwogMXNQxE483SJWsw7cGHisXygOH90pi98Tl4nCBJZNipgJ+09iwA3kgDmMHDHUF6FcaKCg11zjKmxx2SGoPslODqVScujHCuaq0g6lfRCjfT/TK9lJtr1uXfaZXqSni49JJlqtcyGkash71F5R07+klh2rJHvcc6tORDZq5gSp1eWOJbkLaii9DNSojbN40fSy9P6db8XyaVnKsskSXapWqldaLdpFJU+JmfuiEFftTSteMc6rlxKFt1/vpyNjh/+2rll6IoHsv+T5ex9WNs3Y+jSCxNuMPSg3aBrpIo06GpLg662NOhqS4OutjToakuDrrY06GpLg662NOhqS4OutjToakuDrrY06GpLg662NOhqS4OutjToakuDrrY06GpLg662NOhqS4OutjToakuDrrY06GpLg662NOhqS4OutjToakuDrrY06GpLg662NOhqS4OutjB0ltnI+RL/fwqcvrj8L4dRLCtz/v4MAAAAAElFTkSuQmCC"
+                width="200" height="100">
+        </div>
+        <div class="col-5">
+            <nav class="navbar navbar-expand-sm">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href=#>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=#>Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=#>Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=#>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="col-1 ms-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#myModal">Login</button>
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Please enter your login details</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="" class="text-start">
+                                Username
+                                <input type="text" class="form-control">
+                                Password
+                                <input type="password" class="form-control">
+                            </form>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <input type="search" class="form-control" placeholder="search here">
+        </div>
+        <div class="col-1">
+            <button type="button" class="btn btn-primary btn-sm">Submit</button>
+        </div>
+       <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cio.eletsonline.com/wp-content/uploads/2021/06/Accenture.jpg" alt="Los Angeles" class="d-block w-100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="https://wallpaperaccess.com/full/1533419.jpg" alt="Chicago" class="d-block w-100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="https://media.glassdoor.com/l/33/db/8e/95/office-building.jpg" alt="New York" class="d-block w-100" height="500">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+    <div class = "col-6 mt-2">
+        <img src = "https://thumbs.dreamstime.com/b/registration-hand-pressing-button-interface-blue-background-49410297.jpg" alt="" width="600" height="500">
+    </div>  
+    <div class = "col-6"> 
+        
+        <form action="/action_page.php" class="border border-secondary mt-2 ps-3 pe-3 pt-2 pb-2" >
+            <h2 align ="center">Registration form</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="name" class="form-control" id="name">
+              </div>
+           
+            <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="email" placeholder="" name="email">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password:</label>
+              <input type="password" class="form-control" id="pwd" placeholder="" name="pswd">
+            </div>
+        
+            <div class="form-group">
+                <label for="city">City</label>
+                <input type="city" class="form-control" id="city">
+              </div>
+
+              <div class="mb-3 mt-3">
+                <label for="state">State</label>
+
+                <select class="form-select">
+                    
+                    <option>--Select your state--</option>
+                    <option>kerala</option>
+                    <option>Tamil Nadu</option>
+                    <option>andra pradesh</option>
+                    <option>Delhi</option>
+                  </select>
+              </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+    </div>
+    <div class="container mt-3">
+        <table class="table">
+            <thead class="table-primary">
+              <tr>
+                <th>S.no</th>
+                <th>Reg.No</th>
+                <th>Name of the participant</th>
+                <th>collaborative activity</th>
+                <th>collaborating Agency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>URK20CS0103</td>
+                <td>LOIS</td>
+                <td>Web Technology</td>
+                <td>CADD CENTRE</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>URK20CS1089</td>
+                <td>THEO</td>
+                <td>Internet of Things</td>
+                <td>CADD CENTRE</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>URK20CS1077</td>
+                <td>KEREN</td>
+                <td>Design Thinking</td>
+                <td>CADD CENTRE</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>URK20CS1067</td>
+                <td>CHRIS</td>
+                <td>Compiler Design</td>
+                <td>CADD CENTRE</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </body>
+</html>
